@@ -10,6 +10,9 @@ En esta sección vamos a realizar ejercicios con llamadas y su gestión
 
 [Solucion async await](#Ejercicio-4)
 
+[Lanza 2 llamadas secuenciales](#Ejercicio-5)
+
+[Lanza 2 llamadas a la vez](#Ejercicio-6)
 
 ### Ejercicio 1
 
@@ -53,6 +56,21 @@ Coge el ejercicio anterior y conviertelo a async await para que el output desead
 > "RESPONSE: Hi, I'm doing really good."
 ```
 
+### Ejercicio 5
+
+Haz una función que lance estas 2 llamadas de forma secuencial cuando acabe una y después otra
+```
+api.coincap.io/v2/assets/bitcoin
+api.coincap.io/v2/assets/ethereum
+```
+
+### Ejercicio 6
+
+Haz una función que lance estas 2 llamadas a la vez
+```
+api.coincap.io/v2/assets/bitcoin
+api.coincap.io/v2/assets/ethereum
+```
 
 ![Rudo](../README/rudo.png)
 
