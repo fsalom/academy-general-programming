@@ -12,6 +12,8 @@
 
 [Ejercicios con arrays y objetos](exercises/arraysandobjects.md)
 
+[Ejercicios manejo de errores](exercises/error.md)
+
 [Ejercicios sincrono / asincrono iOS](exercises/calls.md)
 
 [Ejercicios especiales](exercises/special.md)
