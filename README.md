@@ -2,19 +2,19 @@
 
 # EJERCICIOS
 
-[Ejercicios con números](exercises/numbers.md)
+[Ejercicios con números](exercises/numbers.md) - operaciones, tipos distintos de números, devolución de valores... todo lo que necesitas para manejar números.
 
-[Ejercicios con cadenas de texto](exercises/strings.md)
+[Ejercicios con cadenas de texto](exercises/strings.md) - cadenas de texto, carácteres, reemplazo, sustitución etc.
 
-[Ejercicios con arrays](exercises/arrays.md)
+[Ejercicios con arrays](exercises/arrays.md) - conjunto de datos, busquedas, eliminacion, inserción etc.
 
-[Ejercicios con objetos](exercises/objects.md)
+[Ejercicios con objetos](exercises/objects.md) - todo lo que vemos lo podemos describir con un objeto, sus propiedades y funciones.
 
-[Ejercicios con arrays y objetos](exercises/arraysandobjects.md)
+[Ejercicios con arrays y objetos](exercises/arraysandobjects.md) - mezclamos la potencia de los objetos con los arrays para abrir un mundo de posibilidades.
 
-[Ejercicios manejo de errores](exercises/error.md)
+[Ejercicios gestión de errores](exercises/error.md) - el gran enemigo Errores, cómo debes de tratarlos, propagarlos etc.
 
-[Ejercicios sincrono / asincrono iOS](exercises/calls.md)
+[Ejercicios sincrono / asincrono iOS](exercises/calls.md) - que diferencia hay entre lo sincrono y lo asincrono, cómo debes de tratarlos.
 
 [Ejercicios especiales](exercises/special.md)
 
@@ -59,42 +59,6 @@ Para los **BACKS**
 | ----- | ---- | ---- | ---- | ---- | ---- | ---- | 
 | 1 s. | 1 s. | 2 s. | 3 s. | 1 s. | 4 s. | El tiempo sobrante |
 
-## 🏗 Aprendiendo los básicos
-
-Dependiendo del lenguaje designado los básicos los aportará una fuente diferente
-
-- Swift: Libro de apple
-- Kotlin: Libro de google
-- Django/Python: 
-- Flutter:  
-- Ionic: 
-
-## 🕵️‍♀️ Resolución de problemas
-
-**Preparar un proyecto de ejemplo que puedan usar de base para su proyecto**
-
-**Crear un git por tecnología para que cada academy cree una rama para hacer los ejercicios**
-
-**Ejercicios de imprimir por consola**
-
-- Int
-- Float
-- String
-  - Concatenar cadenas
-  - Contar el número de letras de una frase
-  - Reemplazar todas las vocales de una frase por i imitando a los niños pedantes
-  - Buscar la primera posición de una determinada letra en una frase
-  - Buscar la última posición de una determinada letra en una frase
-  - Eliminar un determinado texto de una frase
-  - Indicar si existe un conjunto de letras en una frase
-- Bool
-- Class
-- Array
-
-** Ejercicios interesantes para IOS **
-- Uso de los opcionales para devolverlo en funciones por ejemplo
-- guard let y if let cuando y como usarlos
-- clases y structs que diferencias hay, cuando usar uno u otro 
 
 ## 🧑‍🎨 Maquetación UI 
 
