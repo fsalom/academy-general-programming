@@ -20,13 +20,13 @@
 
 # APPS
 
-[Crypto APP](test/crypto.md)
+[Crypto APP](test/crypto.md) - Crea una app para listar criptomonedas
+ 
+[Rick and Morty APP](test/rickandmorty.md) - Crea una app para listar los personajes de rick y morty 
 
-[Rick and Morty APP](test/rickandmorty.md)
+[Marvel APP](test/marvel.md) - Crea una app para listar los personajes de marvel y sus comics
 
-[Marvel APP](test/marvel.md)
-
-[TikTok APP](test/tiktok.md)
+[TikTok APP](test/tiktok.md) - Crea una de las interacciones más famosas de la actualidad el feed de tiktok
 
 # ACADEMIA: Programación general
 Aprende a desarrollar con ejercicios practicos que te enseñan paso a paso y con dificultad gradual a desenvolverte mejor. 
