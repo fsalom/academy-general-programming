@@ -16,7 +16,7 @@
 
 [Ejercicios sincrono / asincrono iOS](exercises/calls.md) - que diferencia hay entre lo sincrono y lo asincrono, cómo debes de tratarlos.
 
-[Ejercicios especiales](exercises/special.md)
+[Ejercicios especiales](exercises/special.md) - situaciones especiales que se pueden producir ¿Cómo las solucionarías?
 
 # APPS
 
