@@ -1,4 +1,4 @@
-# Gesión de errores
+# Gestión de errores
 En esta sección vamos a realizar ejercicios para el manejo de errores
 
 ## 📝 Ejercicios
@@ -14,7 +14,6 @@ Crea una función que devuelva un error siempre
 ### Ejercicio 2
 
 Crea una función que devuelva un error custom, por ejemplo badParameter
-
 
 ![Rudo](../README/rudo.png)
 
