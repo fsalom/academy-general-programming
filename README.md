@@ -14,6 +14,8 @@
 
 [Ejercicios gestión de errores](exercises/error.md) - el gran enemigo Errores, cómo debes de tratarlos, propagarlos etc.
 
+[Ejercicios protocolos / interfaces](exercises/protocols.md) - aprende a gestionar como funcionan y sus ventajas.
+
 [Ejercicios sincrono / asincrono iOS](exercises/calls.md) - que diferencia hay entre lo sincrono y lo asincrono, cómo debes de tratarlos.
 
 [Ejercicios especiales](exercises/special.md) - situaciones especiales que se pueden producir ¿Cómo las solucionarías?
