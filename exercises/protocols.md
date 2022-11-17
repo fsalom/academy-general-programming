@@ -20,19 +20,18 @@ Crea tu primer protocolo. El ejercicio consiste en crear una pantalla con un lab
 https://rickandmortyapi.com/api/character
 ```
 
-5- Añadir vuestro controlador esta función:
+4- Añadir vuestro controlador esta función:
 ```
 func giveMeTheName(through protocol: ApiProtocol ) -> String {
 	return protocol.getFirstName()
 }
 ```
-y llamar al texto de vuestro label como:
+
+5- Pinta el nombre en el String llamando al texto de vuestro label como:
+
 ```
 label.text = giveMeTheName(through: ____)
 ```
-
-4- Pinta el nombre en el String
-
 
 ### Ejercicio 2
 
