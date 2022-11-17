@@ -19,6 +19,18 @@ Crea tu primer protocolo. El ejercicio consiste en crear una pantalla con un lab
 ```
 https://rickandmortyapi.com/api/character
 ```
+
+5- Añadir vuestro controlador esta función:
+```
+func giveMeTheName(through protocol: ApiProtocol ) -> String {
+	return protocol.getFirstName()
+}
+```
+y llamar al texto de vuestro label como:
+```
+label.text = giveMeTheName(through: ____)
+```
+
 4- Pinta el nombre en el String
 
 
@@ -29,6 +41,12 @@ Crea una segunda clase que herede del mismo protocolo pero esta vez devuelve el 
 https://api.coincap.io/v2/assets
 ```
 y repite el proceso de mostrar el texto en el label
+
+### Ejercicio 3
+cambiar de protocolos
+### Ejercicio 4
+tabla con boton en celda y un delegate para ejecutar funciones
+
 
 ![Rudo](../README/rudo.png)
 
