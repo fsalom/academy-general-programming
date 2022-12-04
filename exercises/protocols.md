@@ -62,8 +62,6 @@ https://api.coincap.io/v2/assets
 ```
 y repite el proceso de mostrar el texto en el label
 
-### Ejercicio 3
-cambiar de protocolos
 ### Ejercicio 4
 tabla con boton en celda y un delegate para ejecutar funciones
 
