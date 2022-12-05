@@ -20,8 +20,8 @@ func sayHello(in language: HiProtocol ) {
 }
 let spanish = Spanish()
 let english = English()
-sayHello(spanish)
-sayHello(english)
+sayHello(in: spanish)
+sayHello(in: english)
 
 //Hola
 //Hello
@@ -63,8 +63,8 @@ https://api.coincap.io/v2/assets
 y repite el proceso de mostrar el texto en el label
 
 ### Ejercicio 4
-tabla con boton en celda y un delegate para ejecutar funciones
 
+Crea una tabla que contenga X celdas. Crea en cada celda un botón que al pulsarse recargue la tabla (reloadData) y cambie el color de fondo de la tabla. 
 
 ![Rudo](../README/rudo.png)
 
