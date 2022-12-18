@@ -6,10 +6,10 @@
 
 El objetivo de este ejercicio es realizar una aplicación que muestre un listado de tareas para hacer. Por ejemplo:
 
-[x] Crear un repositorio
-[x] Hacer mi primer commit
-[ ] Crear la primera funcionalidad
-[ ] Crear la segunda funcionalidad
+- [x] Crear un repositorio
+- [x] Hacer mi primer commit
+- [ ] Crear la primera funcionalidad
+- [ ] Crear la segunda funcionalidad
 
 Las funcionalidades básicas que se esperan en la aplicación es:
 
