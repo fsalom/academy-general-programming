@@ -20,7 +20,7 @@ func tePidoElNumero() -> String? {
 // printee  🥳 si te da su número
 // o 😭 si no lo consigues
 // - - - - - - - - - - - - - - - - -
-func tengoSuerte() {
+func tengoSuerte() -> String {
     let numero = tePidoElNumero()
 }
 
@@ -29,7 +29,7 @@ tengoSuerte()
 
 // - - - - - - - - - - - - - - - - -
 // devuelve el número si lo has conseguido
-// o 🖕
+// o 🥹 si no
 // - - - - - - - - - - - - - - - - -
 
 func meHaDadoEsteNumero() -> String {
@@ -40,3 +40,19 @@ func meHaDadoEsteNumero() -> String {
 
 print("----- me ha dado su número? -------")
 meHaDadoEsteNumero()
+
+// - - - - - - - - - - - - - - - - -
+// Pide el número de telefono y una vez
+// que te lo den consulta si es el correcto
+// devolviendo 🥳 si te ha dado número y es correcto
+// devolviendo 😭 si no lo has conseguido
+// devolviendo 😡 si no era correcto
+// - - - - - - - - - - - - - - - - -
+
+func meHaDadoEsteNumeroYLoCompruebo() -> String {
+    let numero = tePidoElNumero()
+    esDeVerdad(el: numero)
+    return ""
+}
+
+print(meHaDadoEsteNumeroYLoCompruebo())
