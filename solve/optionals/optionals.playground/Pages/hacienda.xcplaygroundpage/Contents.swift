@@ -29,7 +29,7 @@ let users = [
     User(name: "Mary", age: 28, childs: [child1], income: 20000.0)
 ]
 
-// - - - - - - - - - - - - - - - - -
+// - - - - - - - - - - - - - - - - - - - - - - - - -
 // Vamos a crear una comprobación de lo que le va a
 // cobrar Hacienda a cada usuario. Las reglas son:
 // - Si gana entre 0 y 10000 no paga nada
@@ -41,15 +41,16 @@ let users = [
 // - Si tiene un hijo tiene una discapacidad paga un 10% menos
 // - No puede haber porcentaje negativo por lo que si es así no se cobra nada
 
-// Cuando calcules lo que tiene que pagar cada usuario printea el resultado
-// - - - - - - - - - - - - - - - - -
+// Cuando calcules lo que tiene que pagar cada usuario printea
+// la cantidad a cobrar y el %
+// - - - - - - - - - - - - - - - - - - - - - - - - -
 
-func comprobacionDeHacienda(para usuario: User) {
+func haciendaIsGoingToCharge(this user: User) {
 
 }
 
 for user in users {
-    comprobacionDeHacienda(para: user)
+    haciendaIsGoingToCharge(this: user)
 }
 
 // RESULTADOS:
