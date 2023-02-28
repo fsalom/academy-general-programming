@@ -2,17 +2,29 @@
 
 import Foundation
 
-struct Register {
+class Register {
     var firstName: String?
     var lastName: String?
     var email: String?
-    var birthday: String?
+    var birthday: String? = nil
     var isGMAIL: Bool = false
-    var username: String?
-    var password: String?
+    var username: String? = nil
+    var password: String? = nil
+    init(firstName: String? = nil,
+         lastName: String? = nil,
+         email: String? = nil,
+         birthday: String? = nil,
+         username: String? = nil,
+         password: String? = nil) {
+        self.firstName = firstName
+        self.lastName = lastName
+        self.email = email
+        self.birthday = birthday
+        self.username = username
+        self.password = password
+    }
 }
-
-let registers = [
+var registers = [
     Register(firstName: "Fer",
              email: "fer@rudo.es",
              username: "fer"),
@@ -22,8 +34,6 @@ let registers = [
              password: "1234"),
     Register(firstName: "Maria",
              email: "maria@gmail.com",
-             password: "1234"),
-    Register(username: "test",
              password: "1234"),
 ]
 
