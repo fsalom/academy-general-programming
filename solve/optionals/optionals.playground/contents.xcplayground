@@ -4,5 +4,6 @@
         <page name='conseguirElNumero'/>
         <page name='registro'/>
         <page name='hacienda'/>
+        <page name='fichajes'/>
     </pages>
 </playground>
