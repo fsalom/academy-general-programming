@@ -20,7 +20,7 @@ func setInfo() -> Info {
     if randomInt % 2 == 0 {
         return Info()
     }
-    return Info(name: "my information")
+    return Info(name: "SUCCESS: this is my information")
 }
 
 func network() throws -> Info {
@@ -40,11 +40,11 @@ func network() throws -> Info {
 func getInformation() throws -> Info {
     do {
         let info = try network()
-        if let name = info.name {
-            if name.isEmpty {
-                throw InfoError.nameIsEmpty
-            }
+        guard let name = info.name else {
             throw InfoError.nameNotFound
+        }
+        if name.isEmpty {
+            throw InfoError.nameIsEmpty
         }
         return info
     } catch {
@@ -52,15 +52,23 @@ func getInformation() throws -> Info {
     }
 }
 
+// - - - - - - - - - - - - - - - - - - - - - - - - -
+// Crea una función que llame a getInformation() y haga lo siguiente:
+// - Si devuelve un objeto information imprimes el valor de name
+// - Si da error llama a resolveThis(error: Error) y devuelve dependiendo del tipo de error:
+//   - Si da un NetworkError imprime FAIL NETWORK: + el tipo de error que se ha producido
+//   - Si da un InfoError imprime FAIL INFO: + el tipo de error que se ha producido
+// - - - - - - - - - - - - - - - - - - - - - - - - -
 
-
-func resolveThis(error: Error) -> String {
+func resolveThis(error: Error) {
 
 }
 
-// - - - - - - - - - - - - - - - -
-//
-// - - - - - - - - - - - - - - - -
 func information() {
 
 }
+
+for _ in 0...10 {
+    information()
+}
+
