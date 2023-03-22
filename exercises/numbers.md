@@ -16,6 +16,8 @@ En esta sección vamos a tratar con números y las distintas formas de gestionar
 
 [Calcula el volumen](#Ejercicio-7)
 
+[Calcula los X primeros números primos](#Ejercicio-8)
+
 
 ### Ejercicio 1
 
@@ -66,6 +68,13 @@ Calcula el volumen de una piscina dado el ancho, largo y la altura
 ```
 Ejemplo:
 ancho 4 largo 4 alto 3 -> 48
+```
+
+### Ejercicio 8
+Crea una función para calcular los X primeros números primos
+```
+Ejemplo:
+los 5 primeros: 1, 2, 3, 5, 7
 ```
 
 ![Rudo](../README/rudo.png)
