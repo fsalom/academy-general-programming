@@ -36,15 +36,15 @@ _Work in progress_
 
 ## 📱 APPs
 
-[Crypto APP](test/crypto.md) - Crea una app para listar criptomonedas
+[Crypto APP](exam/crypto.md) - Crea una app para listar criptomonedas
  
-[Rick and Morty APP](test/rickandmorty.md) - Crea una app para listar los personajes de rick y morty 
+[Rick and Morty APP](exam/rickandmorty.md) - Crea una app para listar los personajes de rick y morty 
 
-[Marvel APP](test/marvel.md) - Crea una app para listar los personajes de marvel y sus comics
+[Marvel APP](exam/marvel.md) - Crea una app para listar los personajes de marvel y sus comics
 
-[TikTok APP](test/tiktok.md) - Crea una de las interacciones más famosas de la actualidad el feed de tiktok
+[TikTok APP](exam/tiktok.md) - Crea una de las interacciones más famosas de la actualidad el feed de tiktok
 
-[ToDo APP](test/todolist.md) - Crea una "To Do list" en el que almacenes de forma local un listado de tareas.
+[ToDo APP](exam/todolist.md) - Crea una "To Do list" en el que almacenes de forma local un listado de tareas.
 
 
 ![Rudo](README/rudo.png)
