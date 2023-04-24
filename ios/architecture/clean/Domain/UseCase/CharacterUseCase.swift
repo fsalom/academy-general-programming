@@ -24,35 +24,25 @@ final class CharacterUseCase {
 }
 
 protocol CharacterUseCaseProtocol {
-    func getList(for page: Int) async throws -> ([Character], Bool)
-    func search(this name: String, for page: Int) async throws -> ([Character], Bool)
+    func getCharactersAndNextPage(for page: Int) async throws -> ([Character], Bool)
+    func getCharactersAndNextPageWhenSearching(this name: String, for page: Int) async throws -> ([Character], Bool)
 }
 
 extension CharacterUseCase: CharacterUseCaseProtocol {
-    func getList(for page: Int) async throws -> ([Character], Bool) {
+    func getCharactersAndNextPage(for page: Int) async throws -> ([Character], Bool) {
         do {
-            var hasNextPage = false
-            let list = try await repository.getList(for: page)
-            guard let nextPage = list.info.next else {
-                hasNextPage = false
-                return (convertToEntity(these: list.results), hasNextPage)
-            }
-            hasNextPage = !nextPage.isEmpty ? true : false
+            let list = try await repository.getPagination(for: page)
+            let hasNextPage = list.info.next != nil ? true : false
             return (convertToEntity(these: list.results), hasNextPage)
         } catch {
             throw error
         }
     }
 
-    func search(this name: String, for page: Int) async throws -> ([Character], Bool) {
+    func getCharactersAndNextPageWhenSearching(this name: String, for page: Int) async throws -> ([Character], Bool) {
         do {
-            var hasNextPage = false
-            let list = try await repository.search(this: name, for: page)
-            guard let nextPage = list.info.next else {
-                hasNextPage = false
-                return (convertToEntity(these: list.results), hasNextPage)
-            }
-            hasNextPage = !nextPage.isEmpty ? true : false
+            let list = try await repository.getPaginationWhenSearching(this: name, for: page)
+            let hasNextPage = list.info.next != nil ? true : false
             return (convertToEntity(these: list.results), hasNextPage)
         } catch {
             throw error

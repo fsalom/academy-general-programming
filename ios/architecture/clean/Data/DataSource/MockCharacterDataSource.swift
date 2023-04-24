@@ -8,7 +8,7 @@
 import Foundation
 
 class MockCharacterDataSource: CharacterDataSourceProtocol {
-    func getList(for page: Int) async throws -> ListDTO {
+    func getPagination(for page: Int) async throws -> ListDTO {
         let info = InfoDTO(count: 20, pages: 1)
         var characters = [CharacterDTO]()
         for index in 0...20 {
@@ -20,7 +20,7 @@ class MockCharacterDataSource: CharacterDataSourceProtocol {
         return list
     }
 
-    func search(this name: String, for page: Int) async throws -> ListDTO {
+    func getPaginationWhenSearching(this name: String, for page: Int) async throws -> ListDTO {
         let info = InfoDTO(count: 20, pages: 1)
         var characters = [CharacterDTO]()
         for index in 0...20 {

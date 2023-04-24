@@ -49,7 +49,7 @@ extension ListViewModel {
         if !hasNextPage { return }
         Task {
             do {
-                let (characters, hasNextPage) = try await characterUseCase.getList(for: page)
+                let (characters, hasNextPage) = try await characterUseCase.getCharactersAndNextPage(for: page)
                 self.characters.append(contentsOf: characters)
                 self.hasNextPage = hasNextPage
             } catch {

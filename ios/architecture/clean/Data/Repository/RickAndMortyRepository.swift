@@ -15,11 +15,11 @@ final class RickAndMortyRepository: CharacterRepositoryProtocol {
         self.datasource = datasource
     }
 
-    func getList(for page: Int) async throws -> ListDTO {
-        return try await self.datasource.getList(for: page)
+    func getPagination(for page: Int) async throws -> ListDTO {
+        return try await self.datasource.getPagination(for: page)
     }
 
-    func search(this name: String, for page: Int) async throws -> ListDTO {
-        return try await self.datasource.search(this: name, for: page)
+    func getPaginationWhenSearching(this name: String, for page: Int) async throws -> ListDTO {
+        return try await self.datasource.getPaginationWhenSearching(this: name, for: page)
     }
 }

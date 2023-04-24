@@ -8,7 +8,7 @@
 import Foundation
 
 class RickAndMortyLocalDataSource: CharacterDataSourceProtocol {
-    func getList(for page: Int) async throws -> ListDTO {
+    func getPagination(for page: Int) async throws -> ListDTO {
         guard let url = URL(string: "https://rickandmortyapi.com/api/character/?page=\(page)") else {
             throw CharacterDataSourceError.badURL
         }
@@ -34,7 +34,7 @@ class RickAndMortyLocalDataSource: CharacterDataSourceProtocol {
         }
     }
 
-    func search(this name: String, for page: Int) async throws -> ListDTO {
+    func getPaginationWhenSearching(this name: String, for page: Int) async throws -> ListDTO {
         guard let url = URL(string: "https://rickandmortyapi.com/api/character/?name=\(name)&page=\(page)") else {
             throw CharacterDataSourceError.badURL
         }

@@ -8,6 +8,6 @@
 import Foundation
 
 protocol CharacterRepositoryProtocol {
-    func getList(for page: Int) async throws -> ListDTO
-    func search(this name: String, for page: Int) async throws -> ListDTO
+    func getPagination(for page: Int) async throws -> ListDTO
+    func getPaginationWhenSearching(this name: String, for page: Int) async throws -> ListDTO
 }
