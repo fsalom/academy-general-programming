@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="MatchCell" customModule="problem" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vsv-Qx-Gnd">
+                        <rect key="frame" x="16.000000000000004" y="11" width="41.333333333333343" height="22"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="eMe-yv-ZNg">
+                        <rect key="frame" x="190" y="0.0" width="130" height="44"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iDJ-Ho-MG8">
+                                <rect key="frame" x="0.0" y="0.0" width="40" height="44"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="1"/>
+                                <connections>
+                                    <action selector="didPressOne:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="glH-NK-Xrx"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="afM-cH-Rz2">
+                                <rect key="frame" x="45" y="0.0" width="40" height="44"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="X"/>
+                                <connections>
+                                    <action selector="didPressDraw:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="yp1-TH-3xP"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fwW-bQ-Fgg">
+                                <rect key="frame" x="90" y="0.0" width="40" height="44"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="2"/>
+                                <connections>
+                                    <action selector="didPressTwo:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="UGW-bn-WRh"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="44" id="DxZ-hM-AY5"/>
+                            <constraint firstAttribute="width" constant="130" id="VXe-oM-8b6"/>
+                        </constraints>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="eMe-yv-ZNg" secondAttribute="bottom" id="4aq-0Q-28h"/>
+                    <constraint firstItem="eMe-yv-ZNg" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="dbD-Ed-9cy"/>
+                    <constraint firstAttribute="trailing" secondItem="eMe-yv-ZNg" secondAttribute="trailing" id="eAE-zt-yyg"/>
+                    <constraint firstItem="vsv-Qx-Gnd" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="imk-P7-LJU"/>
+                    <constraint firstAttribute="bottom" secondItem="vsv-Qx-Gnd" secondAttribute="bottom" constant="11" id="iyW-c5-OLT"/>
+                    <constraint firstItem="vsv-Qx-Gnd" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="11" id="zs7-jB-ceA"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="drawButton" destination="afM-cH-Rz2" id="dQa-xB-SYe"/>
+                <outlet property="nameLabel" destination="vsv-Qx-Gnd" id="qgW-ni-21P"/>
+                <outlet property="oneButton" destination="iDJ-Ho-MG8" id="eHT-oy-O5H"/>
+                <outlet property="twoButton" destination="fwW-bQ-Fgg" id="e6A-Gg-B8L"/>
+            </connections>
+            <point key="canvasLocation" x="-21" y="21"/>
+        </tableViewCell>
+    </objects>
+</document>
